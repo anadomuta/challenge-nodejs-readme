@@ -131,3 +131,6 @@ dist
 
 # DS Store file
 .DS_Store
+
+# Node modules files
+node_modules/
