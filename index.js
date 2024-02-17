@@ -128,11 +128,18 @@ const init = async () => {
 
     const markdown = generateMarkdown(answers);
 
-    await writeFileAsync("README.md", markdown);
+    if (!fs.existsSync(`generated`)) {
+      fs.mkdirSync(`generated`);
+    }
 
-    console.log("Successfully wrote to README.md");
+    await writeFileAsync(
+      path.join(`${process.cwd()}/generated/`, "README.md"),
+      markdown
+    );
+
+    console.info("Successfully wrote to README.md");
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 };
 
