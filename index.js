@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
 const util = require("util");
+
 const generateMarkdown = require("./utils/generateMarkdown");
 
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -94,6 +95,24 @@ const questions = [
     type: "input",
     name: "contribution",
     message: "What does the user need to know about contributing to the repo?",
+  },
+  {
+    type: "input",
+    name: "credits",
+    message:
+      "List your collaborators, if any, with links to their GitHub profiles.",
+  },
+  {
+    type: "input",
+    name: "features",
+    message: "If your project has a lot of features, please list them here.",
+  },
+  {
+    type: "checkbox",
+    name: "badges",
+    message:
+      "Please select which languages and tools you used to create this project.",
+    choices: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "NodeJS"],
   },
 ];
 
