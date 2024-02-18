@@ -1,5 +1,4 @@
-const generateBadges = require("./generateBadges");
-const generateLicenseBadge = require("./generateBadges");
+const { generateBadges, generateLicenseBadge } = require("./generateBadges");
 
 // Function to generate markdown for README
 const generateMarkdown = (answers) => {
@@ -34,7 +33,7 @@ ${answers.dependencies}
 
 ${answers.usage}
 
-## Licence 
+## License 
 
 This project is licensed under the ${answers.license} license.
 
