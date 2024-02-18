@@ -1,4 +1,5 @@
-const generateBadges = require("./utils/generateBadges");
+const generateBadges = require("./generateBadges");
+const generateLicenseBadge = require("./generateBadges");
 
 // Function to generate markdown for README
 const generateMarkdown = (answers) => {
