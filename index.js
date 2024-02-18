@@ -2,10 +2,20 @@ const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
 const util = require("util");
+const emailValidator = require("email-validator");
 
 const generateMarkdown = require("./utils/generateMarkdown");
 
 const writeFileAsync = util.promisify(fs.writeFile);
+
+// Function to validate user email address
+const validateEmail = (email) => {
+  if (emailValidator.validate(email)) {
+    return true;
+  } else {
+    return "Please enter a valid email address.";
+  }
+};
 
 // Array of questions for user
 const questions = [
@@ -18,6 +28,7 @@ const questions = [
     type: "input",
     name: "email",
     message: "What is your email address?",
+    validate: validateEmail,
   },
   {
     type: "input",
