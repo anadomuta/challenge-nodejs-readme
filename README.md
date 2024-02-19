@@ -27,11 +27,13 @@ When a user is prompted for information about the application repository, a high
 
 To generate a README, open your terminal, run the command `node index.js` and answer the prompts.
 
-The following walkthrough video demonstrates the functionality of the README generator:
+The following walkthrough video demonstrates the functionality of the README generator: https://drive.google.com/file/d/1TFYg_bjtpVwnMArKppWv8gfbAJgaWikK/view?usp=sharing
 
 The screenshots below display an overview of a sample generated README.
 
-![Example README]()
+![Demo terminal commands](./images/terminal-screenshot.png)
+![First section README](./images/first-section-readme.png)
+![Second section README](./images/second-section-readme.png)
 
 ## Credits
 
