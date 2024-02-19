@@ -6,8 +6,6 @@ A command-line application designed to dynamically generate a professional READM
 
 The project represents an application that allows users to generate a README file.
 
-The application offers the following functionalities:
-
 When a user is prompted for information about the application repository, a high-quality, professional README.md is generated with:
 
 - The project title.
@@ -42,7 +40,7 @@ The project was built following the instructions from the materials in the Skill
 In addition, the following resources were used:
 
 1. Bootcamp content
-2. Tutoring session: use of sync
+2. Tutoring session: use of mkdirSync method
 3. Markdown badges from [ileriayo](https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#markdown-badges)
 
 ## License
