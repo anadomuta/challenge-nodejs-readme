@@ -76,13 +76,13 @@ const questions = [
     type: "input",
     name: "dependencies",
     message: "What command should be run to install dependencies",
-    default: "npm i",
+    default: "`npm i`",
   },
   {
     type: "input",
     name: "tests",
     message: "What command should be run to run tests",
-    default: "npm test",
+    default: "`npm test`",
   },
   {
     type: "input",
@@ -99,11 +99,6 @@ const questions = [
     name: "credits",
     message:
       "List your collaborators, if any, with links to their GitHub profiles.",
-  },
-  {
-    type: "input",
-    name: "features",
-    message: "If your project has a lot of features, please list them here.",
   },
   {
     type: "checkbox",
@@ -123,7 +118,6 @@ const promptUser = () => {
 const init = async () => {
   try {
     const answers = await promptUser();
-
     const markdown = generateMarkdown(answers);
 
     if (!fs.existsSync(`generated`)) {

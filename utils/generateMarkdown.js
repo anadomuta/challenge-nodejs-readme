@@ -49,9 +49,9 @@ ${answers.tests}
 
 ## Questions 
 
-If you have any questions about this project, please reach out: https://github.com/${
-    answers.username
-  }, ${answers.email}
+If you have any questions about this project, please reach out:
+- GitHub: https://github.com/${answers.username}
+- Email: ${answers.email}
 
 ## Badges
 
